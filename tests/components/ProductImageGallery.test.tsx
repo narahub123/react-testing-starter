@@ -13,7 +13,7 @@ describe("ProductImageGallery", () => {
   it("should render a list of images ", () => {
     const imageUrls = ["url1", "url2"];
 
-    render(<ProductImageGallery imageUrls={[]} />);
+    render(<ProductImageGallery imageUrls={imageUrls} />);
 
     const images = screen.getAllByRole("img");
     // 배열의 요소가 두개 인지 확인
